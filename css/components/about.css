@@ -1,0 +1,101 @@
+@import url(../utility/variable.css);
+
+#about {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+  transition: all 0.4s ease-in;
+}
+.card-row {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+  transform-style: preserve-3d;
+  transition: all 0.6s ease-out;
+}
+.card img {
+  max-width: 60%;
+  height: 100%;
+
+  transition: all 0.5s ease-out;
+}
+
+.card-body h1 {
+  font-family: var(--secondary-fonts);
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  margin: 1rem 0rem;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+.card-body p {
+  font-family: var(--primary-fonts);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+#card1 {
+  align-self: center;
+}
+#card4 {
+  align-self: center;
+}
+
+
+#card1 img{
+    animation: float 2s ease infinite alternate-reverse;
+}
+#card2 img {
+    animation: float 2s ease infinite alternate;
+}
+#card3 img {
+  max-width: 100%;
+  height: 100%;
+  animation: float 2s ease infinite alternate;
+}
+#card4 img {
+  max-width: 60%;
+  height: 100%;
+  animation: float 2s ease infinite alternate-reverse;
+}
+
+#card5 img{
+    animation: float 2s ease infinite alternate-reverse;
+}
+#card6 img{
+    animation: float 2s ease infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    clip-path: circle(10% at center center);
+  }
+
+  100% {
+    clip-path: circle(100% at center center);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-row {
+    flex-direction: column;
+  }
+  .card-body h1 {
+    font-size: 3rem;
+  }
+  #card3 img {
+    max-width: 60%;
+  }
+}

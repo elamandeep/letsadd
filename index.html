@@ -1,0 +1,114 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letsadd</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="assets/logo.png" alt="logo">
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#clients">Our Clients</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <!-- hamburger menu -->
+            <div class="hamburger">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="puzzle-img">
+                <img src="assets/logo.png" alt="hero-img">
+            </div>
+            <div class="hero-content">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui blanditiis unde odio, totam consectetur exercitationem quos quo error ipsum fugiat, voluptatum vero porro excepturi debitis quis, asperiores beatae. Unde, corrupti!</p>
+                <button type="submit">Submit</button>
+            </div>
+        </section>
+        <section id="about">
+            <div class="card-row">
+                <div class="card" id="card1">
+                    <img src="assets/pexels-julia-volk-6118720.jpg" alt="image">
+                    <div class="card-body">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <img src="assets/pexels-lilartsy-4855615.jpg" alt="image">
+                    <div class="card-body">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card" id="card3">
+                    <img src="assets/pexels-kieren-ridley-5570835.jpg" alt="image">
+                    <div class="card-body">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <img src="assets/pexels-nico-becker-5913689.jpg" alt="image">
+                    <div class="card-body">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card" id="card5">
+                    <img src="assets/pexels-julia-volk-6118720.jpg" alt="image">
+                    <div class="card-body">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card" id="card6">
+                    <img src="assets/pexels-lilartsy-4855615.jpg" alt="image">
+                    <div class="card-body">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients">
+           <div class="box" id="box1"></div>
+           <div class="box" id="box2"></div>
+           <div class="box" id="box3"></div>
+           <div class="box" id="box4"></div>
+           
+        </section>
+        <section id="contact">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                <input type="email"  name="email" placeholder="Email">
+                <input type="number"  name="number" placeholder="Phone No">
+                <textarea  name="textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/navbar.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/transition.js"></script>
+
+</body>
+</html>

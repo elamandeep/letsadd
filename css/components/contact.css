@@ -1,0 +1,75 @@
+@import url(../utility/variable.css);
+
+#contact{
+    min-height: 100vh;
+    background-color:var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input{
+    margin-bottom:10px;
+    width: 100vh;
+    padding: 10px;
+    border: 2px solid var(--yellow);
+    background: transparent;
+    outline: none;
+    font-size: 2rem;
+    color: var(--yellow);
+    font-family: var(--primary-fonts);
+}
+
+form textarea{
+    border: 2px solid var(--yellow);
+    background: transparent;
+    outline: none;
+    padding:10px ;
+    width: 100vh;
+    font-size: 2rem;
+    color: var(--yellow);
+    font-family: var(--primary-fonts);
+}
+
+.btn{
+    padding: 10px 20px;
+    width: 100vh;
+    margin-top:10px ;
+    border: 2px solid var(--yellow);
+    background: transparent;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--primary-fonts);
+    text-transform: uppercase;
+    color: var(--yellow);
+    transition: background 0.8s ease-out;
+
+
+}
+.btn:hover{
+    background: var(--yellow);
+    color: var(--black);
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media screen and (max-width:700px){
+  form input{
+    width: 100%;
+  }
+  form textarea{
+    width: 100%;
+  }
+  .btn{
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+@import url(components/navbar.css);
+@import url(components/hero.css);
+@import url(components/about.css);
+@import url(components/clients.css);
+@import url(components/contact.css);
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;   
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* @supports(scrollbar-color:var(--yellow)){
+    *{
+        scrollbar-color: var(--black) var(--grey);
+        scrollbar-width: thin;
+    }
+    
+} */
+

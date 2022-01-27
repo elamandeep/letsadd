@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+:root{
+    --primary-fonts:'Open Sans', sans-serif;
+    --secondary-fonts:'Spartan', sans-serif;
+    --black:#020202;
+    --yellow:#ffed0b;
+    --white:#ffffff;
+    --grey:rgb(245, 250, 179);
+    --lightgreen:#cdefd4 ;
+    --lightpink:#efcfd0;
+    --lightblue:#ceebef;
+    --lightyellow:#eee2cd;
+}

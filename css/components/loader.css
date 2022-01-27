@@ -1,0 +1,106 @@
+/* white : transform: translate(50px ,230px);
+    yellow(1) : transform: translate(370px ,-50px);
+    yellow(2) :   transform: translate(-370px ,-50px);
+    yellow(3) : transform: translate(-40px ,499px);
+*/
+
+
+.loader{
+    width: 100vw;
+    max-height:100vh;
+    position: fixed;
+    overflow: hidden;
+   margin: 5rem auto;
+    background-color: var(--white);
+    z-index: 999;
+    display: block;
+
+}
+.loader-container{
+    /* margin-top: 30px; */
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    animation: loader 2s linear;
+}
+
+ @keyframes loader{
+    0%{
+        rotate: 0deg;           
+    }
+ 
+    100%{
+        rotate: -360deg; 
+    }
+} 
+
+.loader-container img:nth-child(1){
+    position: absolute;
+    animation: translate-white 2s linear;
+    transform: translate(50px ,40px);
+}
+@keyframes translate-white {
+    0%{
+        opacity: 0.5;
+        transform: translate(50px ,230px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(50px ,40px);
+    }
+}
+
+.loader-container img:nth-child(2){
+    position: absolute;
+    animation: translate-yellow-bottom 2s linear;
+    transform: translate(-40px ,40px);
+}
+
+@keyframes translate-yellow-bottom{
+    0%{
+        opacity: 0.5;
+        transform: translate(-370px ,40px);    
+    }
+
+    100%{
+        transform: translate(-40px ,40px);
+    }
+}
+
+.loader-container img:nth-child(3){
+    position: absolute;
+    animation: translate-yellow-top 2s linear;
+    transform: translate(-40px ,-50px);
+}
+
+@keyframes translate-yellow-top {
+    0%{
+        opacity: 0.5;
+        transform: translate(-50px ,-240px);
+    }
+    100%{
+        transform: translate(-40px ,-50px);
+    }
+}
+
+.loader-container img:nth-child(4){
+    position: absolute;
+    animation: translate-yellow-left 2s linear;
+    transform: translate(50px ,-50px);
+}
+@keyframes translate-yellow-left{
+    0%{
+        opacity: 0.5;
+        transform: translate(370px ,-50px);
+    }
+    100%{
+        
+        transform: translate(50px ,-50px);
+    }
+}
+.loader-container img{
+    width: 20rem;
+    height: 20rem;
+}
+
